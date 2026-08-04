@@ -61,10 +61,10 @@ purchase_budget = 80.0
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using a set variable\n")
 """Read in solution returned using .state(0) and display solution."""
 
-# TODO: Return the best solution for the set variable symbol and store it stocks_state.
+# TODO: Return the best solution for the set variable symbol and store it in stocks_state.
 
 
-# TODO: Return the objective value of the best solution and store it objective_value.
+# TODO: Return the objective value of the best solution and store it in objective_value.
 
 
 selected_indices = sorted(int(i) for i in stocks_state)
