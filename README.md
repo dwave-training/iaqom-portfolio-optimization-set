@@ -43,7 +43,7 @@ Open the code file `po_set_constraints.py`.
 
 ## Exercise 2
 
-For exercise 2, provide an initial state to test the code.
+In exercise 2, you will test the code after providing an initial state.
 
 Start with the work you did in exercise 1. Create the model object, add the constants to the model, define the decision variable, then set the objective function and add the constraint. Finally, provide an initial state.
 
