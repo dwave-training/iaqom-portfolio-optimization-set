@@ -4,7 +4,7 @@
   
 # Portfolio Optimization with Stride<sup>TM</sup> Hybrid Solver using a Set Variable
 
-For the portfolio optimzation problem, convert the mathematical formulation into a model in Python code. Instead of using binary variables to represent the decision variable, use a set variable to code the problem so that it is compatible for submission to the Stride hybrid solver.
+For the portfolio optimization problem, convert the mathematical formulation into a model in Python code. Use a set to represent the decision variable and code the problem so that it is compatible for submission to the Stride hybrid solver.
 
 The objective is to maximimze the total return of the portfolio. The decision variable is which stocks are included in the portfolio. There are two constraints: a certain number of stocks must be selected for the portfolio, and the available budget for purchasing stocks cannot be exceeded.
 
@@ -26,7 +26,7 @@ Open the code file `po_set_constraints.py`.
       - Add `purchase_budget` to the model object and name it `budget`.
    
    3. Define the set decision variable and store it in `selected_stocks`. Use `len()` to determine the total number of elements in the set.
-   The constraint on the number of selected stocks can be treated as implicit. Ensuring that exactly two stocks are selected is enforced by the structure of the set decision variable, which restricts its size. Therefore, be sure to specify this using the `min_size` and `max_size` parameters.
+   The constraint on the number of selected stocks can be treated as implicit. To ensure that exactly two stocks are selected, restrict the size of the set decision variable by using the `min_size` and `max_size` parameters.
 
    4. Define the objective function to maximize the total return of the portfolio.
 
@@ -43,7 +43,7 @@ Open the code file `po_set_constraints.py`.
 
 ## Exercise 2
 
-In exercise 2, you will test the code after providing an initial state.
+In exercise 2, test the code after providing an initial state.
 
 Start with the work you did in exercise 1. Create the model object, add the constants to the model, define the decision variable, then set the objective function and add the constraint. Finally, provide an initial state.
 

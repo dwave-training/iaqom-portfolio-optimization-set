@@ -11,10 +11,10 @@ Given constants:
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
-# TODO: Import the required package
+# TODO: Import the required package.
 
 
-# TODO: Initialize the nonlinear model called model
+# TODO: Initialize the nonlinear model called model.
 
 
 # 10 stocks to consider 
@@ -29,7 +29,7 @@ daily_prices = [27.286,5.9513,35.735,39.354,38.893,56.873,121.45,705.67,56.44,86
 # Number of stocks to purchase
 num_stocks_to_buy = 2
 
-# Set the budget for the purchase
+# Set the budget for the purchase.
 purchase_budget = 80.0
 
 # TODO: Add the constants to the model object.
@@ -38,8 +38,7 @@ purchase_budget = 80.0
 # Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define the set variable and store it in selected_stocks.
-# Hint: use len() to get the total number of elements in the set.
+# TODO: Define the set variable and store it in selected_stocks. Use len() to get the total number of elements in the set.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
@@ -55,7 +54,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
 # TODO: Lock the model using a context manager.
 
 
-    # TODO: Define the number of states (test only one state) 
+    # TODO: Define the number of states (test only one state). 
     
 
     # TODO: Provide the following initial state: [3,4]

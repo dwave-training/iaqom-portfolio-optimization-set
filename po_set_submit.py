@@ -11,10 +11,10 @@ Given constants:
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
-# TODO: Import any required packages
+# TODO: Import any required packages.
 
 
-# TODO: Initialize the nonlinear model called model
+# TODO: Initialize the nonlinear model called model.
 
 
 # 10 stocks to consider 
@@ -38,8 +38,7 @@ purchase_budget = 80.0
 # Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define the set variable and store it in selected_stocks.
-# Hint: use len() to get the total number of elements in the set.
+# TODO: Define the set variable and store it in selected_stocks. Use len() to get the total number of elements in the set.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
