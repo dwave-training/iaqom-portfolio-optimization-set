@@ -18,17 +18,19 @@ In the first exercise, build a basic portfolio of two stocks to maximize the tot
 
 Open the code file `po_set_constraints.py`.
 
-   1. Create a nonlinear model object called `model` and import the required package.
+   1. Import the relevant package(s).
 
-   2. Add the constants to the model object.
+   2. Create a nonlinear model object called `model`.
+
+   3. Add the constants to the model object.
       - Add `average_returns` to the model object and name it `returns`.
       - Add `daily_prices` to the model object and name it `prices`.
       - Add `purchase_budget` to the model object and name it `budget`.
    
-   3. Define the set decision variable and store it in `selected_stocks`. Use `len()` to determine the total number of elements in the set.
+   4. Define the set decision variable and store it in `selected_stocks`. Use `len()` to determine the total number of elements in the set.
    The constraint on the number of selected stocks can be treated as implicit. To ensure that exactly two stocks are selected, restrict the size of the set decision variable by using the `min_size` and `max_size` parameters.
 
-   4. Define the objective function to maximize the total return of the portfolio.
+   5. Define the objective function to maximize the total return of the portfolio.
 
    ```math
    \min \left[-
@@ -36,7 +38,7 @@ Open the code file `po_set_constraints.py`.
    \right]
    ```
 
-   5. Add the constraint that the cost of the purchased stocks cannot exceed a certain budget.
+   6. Add the constraint that the cost of the purchased stocks cannot exceed a certain budget.
    ```math
    {prices[selected\_stocks]}.sum() \leq budget
    ```
@@ -49,7 +51,7 @@ Start with the work you did in exercise 1. Create the model object, add the cons
 
 Open the code file `po_set_initial_state.py`.
 
-   1. Repeat steps 1 to 5 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
+   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
    
    2. Lock the model using a context manager. Include the following steps in the block:
 
@@ -69,7 +71,7 @@ Start with the work you did in exercise 1. Create the model object, add the cons
 
 Open the code file `po_set_submit.py`.
 
-   1. Repeat steps 1 to 5 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
+   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
    
    2. Lock the model explicitly to prevent further changes.
 
