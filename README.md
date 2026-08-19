@@ -4,11 +4,11 @@
   
 # Portfolio Optimization with Stride<sup>TM</sup> Hybrid Solver using a Set Variable
 
-For the portfolio optimization problem, convert the mathematical formulation into a model in Python code. Use a set to represent the decision variable and code the problem so that it is compatible for submission to the Stride hybrid solver.
+For the portfolio optimization problem, convert the mathematical formulation into a model in Python. Use a set to represent the decision variable and code the problem so that it is compatible for submission to the Stride hybrid solver.
 
-The objective is to maximimze the total return of the portfolio. The decision variable is which stocks are included in the portfolio. There are two constraints: a certain number of stocks must be selected for the portfolio, and the available budget for purchasing stocks cannot be exceeded.
+The objective is to maximimze the total return of the portfolio. The decision variable represents the stocks that are included in the portfolio. There are two constraints: a certain number of stocks must be selected for the portfolio, and the available budget for purchasing stocks cannot be exceeded.
 
-Build the nonlinear model then define the objective function and add the constraints.
+Build the nonlinear model, define the objective function, and add the constraints.
 
 In this exercise, the average monthly returns and the daily closing prices for 10 stocks are provided. The stocks considered in this exercise are "T" (AT&T), "SFL" (FSL), "PFE" (Pfizer), "XOM" (Exxon Mobil), "MO" (Altria Group), "VZ" (Verizon Communications), "IBM" (IBM), "TSLA" (Tesla), "GILD" (Gilead Sciences), and "GE" (General Electric).
 
@@ -16,7 +16,7 @@ In this exercise, the average monthly returns and the daily closing prices for 1
 
 In the first exercise, build a basic portfolio of two stocks to maximize the total return. Add a constraint that the cost of the purchased stocks cannot exceed a certain budget. Formulate the problem so that it is compatible for submission to the Stride Hybrid solver, but do not yet submit it to the solver.
 
-Open the code file `po_set_constraints.py`.
+Open `po_set_constraints.py`.
 
    1. Import the relevant package(s).
 
@@ -47,11 +47,11 @@ Open the code file `po_set_constraints.py`.
 
 In exercise 2, test the code after providing an initial state.
 
-Start with the work you did in exercise 1. Create the model object, add the constants to the model, define the decision variable, then set the objective function and add the constraint. Finally, provide an initial state.
+Start with the work completed in exercise 1. Create the model object, add the constants to the model, define the decision variable, set the objective function, and add the constraint. Finally, provide an initial state.
 
-Open the code file `po_set_initial_state.py`.
+Open `po_set_initial_state.py`.
 
-   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
+   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in `po_set_constraints.py`.
    
    2. Lock the model using a context manager. Include the following steps in the block:
 
@@ -67,17 +67,17 @@ Open the code file `po_set_initial_state.py`.
 
 For exercise 3, submit the problem to the Stride hybrid solver to obtain the best solution.
 
-Start with the work you did in exercise 1. Create the model object, add the constants to the model, define the decision variable, then set the objective function and add the constraint. Then, submit the problem to the Stride solver.
+Start with the work completed in exercise 1. Create the model object, add the constants to the model, define the decision variable, set the objective function, and add the constraint. Then, submit the problem to the Stride solver.
 
-Open the code file `po_set_submit.py`.
+Open `po_set_submit.py`.
 
-   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in the code file `po_set_constraints.py`.
+   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in `po_set_constraints.py`.
    
    2. Lock the model explicitly to prevent further changes.
 
    3. Instantiate the nonlinear sampler and name it `sampler`.
    
-   4. Submit the nonlinear model to the nonlinear sampler. Give this problem a label on your Leap dashboard by using the `label` parameter. Use the label 'Portfolio_Set'. Note that this label is case sensitive and uses an underscore.
+   4. Submit the nonlinear model to the Stride hybrid solver. Give this problem a label on your Leap dashboard by using the `label` parameter. Use the label `Portfolio_Set`. Note that this label is case sensitive and uses an underscore.
 
    5. Return the best solution for the set variable symbol and store it in `stocks_state`.
 
