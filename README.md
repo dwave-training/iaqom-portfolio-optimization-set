@@ -57,7 +57,7 @@ Open `po_set_initial_state.py`.
 
       a. Define the number of states. In this case, only one state is being tested.
    
-      b. Provide the following initial state `[3,4]`. This set is chosen randomly and satisfies the constraints. Remember to use the `set_state()` method to assign the specifcied state to its index.
+      b. Provide the following initial state `[3, 4]`. This set is chosen randomly and satisfies the constraints. Remember to use the `set_state()` method to assign the specified state to its index.
 
       c. Return the initial state for the set variable symbol and store it in `stocks_state`.
 
@@ -71,7 +71,7 @@ Start with the work completed in exercise 1. Create the model object, add the co
 
 Open `po_set_submit.py`.
 
-   1. Repeat steps 1 to 6 of exercise 1. You may copy all the work you submitted in `po_set_constraints.py`.
+   1. Repeat steps 1 to 6 of exercise 1. You may copy your previous work from `po_set_constraints.py`.
    
    2. Lock the model explicitly to prevent further changes.
 
