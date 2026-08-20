@@ -77,7 +77,7 @@ Open `po_set_submit.py`.
 
    3. Instantiate the nonlinear sampler and name it `sampler`.
    
-   4. Submit the nonlinear model to the Stride hybrid solver. Give this problem a label on your Leap dashboard by using the `label` parameter. Use the label `Portfolio_Set`. Note that this label is case sensitive and uses an underscore.
+   4. Submit the nonlinear model to the Stride hybrid solver. Label your problem "Portfolio_Set" using the `label` parameter. This label will show in your Leap dashboard when you submit your problem.  Note that this label is case sensitive and uses an underscore.
 
    5. Return the best solution for the set variable symbol and store it in `stocks_state`.
 

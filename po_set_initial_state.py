@@ -15,7 +15,7 @@ Given constants:
 # TODO: Import the required package.
 
 
-# TODO: Initialize the nonlinear model called model.
+# TODO: Initialize the nonlinear model called `model`.
 
 
 # 10 stocks to consider 
@@ -50,7 +50,7 @@ purchase_budget = 80.0
 
 # Process and print solution
 print("\nPart 2 solution: Test the initial state of portfolio optimization using a set variable\n")
-"""Read in initial state returned using `.state(0)` and display solution."""
+"""Read in the initial state returned using `.state(0)` and display the solution."""
 
 # TODO: Lock the model using a context manager.
 
@@ -58,7 +58,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     # TODO: Define the number of states (test only one state). 
     
 
-    # TODO: Provide the following initial state: [3, 4]
+    # TODO: Provide the following initial state: `[3, 4]`
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
     
 

@@ -15,7 +15,7 @@ Given constants:
 # TODO: Import any required packages.
 
 
-# TODO: Initialize the nonlinear model called model.
+# TODO: Initialize the nonlinear model called `model`.
 
 
 # 10 stocks to consider 
@@ -51,15 +51,15 @@ purchase_budget = 80.0
 # TODO: Lock the model explicitly to prevent changes.
 
 
-# TODO: Instantiate the nonlinear sampler and name it sampler.
+# TODO: Instantiate the nonlinear sampler and name it `sampler`.
 
 
-# TODO: Submit the nonlinear model to the nonlinear sampler. Use the label "Portfolio_Set", which is case sensitive and uses an underscore.
+# TODO: Submit the nonlinear model to Stride hybrid solver. Use the label "Portfolio_Set", which is case sensitive and uses an underscore.
 
 
 # Process and print solution
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using a set variable\n")
-"""Read in solution returned using `.state(0)` and display solution."""
+"""Read in the solution returned using `.state(0)` and display the solution."""
 
 # TODO: Return the best solution for the set variable symbol and store it in `stocks_state`.
 
