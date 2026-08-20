@@ -2,7 +2,7 @@
   https://img.shields.io/badge/Open%20in%20GitHub%20Codespaces-333?logo=github)](
   https://codespaces.new/dwave-training/iaqom-portfolio-optimization-set?quickstart=1)
   
-# Portfolio Optimization with Stride<sup>TM</sup> Hybrid Solver using a Set Variable
+# Portfolio Optimization With Stride<sup>TM</sup> Hybrid Solver Using a Set Variable
 
 For the portfolio optimization problem, convert the mathematical formulation into a model in Python. Use a set to represent the decision variable and code the problem so that it is compatible for submission to the Stride hybrid solver.
 
