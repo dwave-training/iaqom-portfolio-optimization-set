@@ -59,7 +59,7 @@ purchase_budget = 80.0
 
 # Process and print solution
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using a set variable\n")
-"""Read in the solution returned using `.state(0)` and display the solution."""
+"""Read in the solution returned using `state(0)` and display the solution."""
 
 # TODO: Return the best solution for the set variable symbol and store it in `stocks_state`.
 
