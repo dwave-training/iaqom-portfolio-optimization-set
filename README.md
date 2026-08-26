@@ -23,9 +23,9 @@ Open `po_set_constraints.py` and do the following:
    2. Create a nonlinear model object called `model`.
 
    3. Add the following constants to the model object:
-      - `average_returns` to the model object and name it `returns`.
-      - `daily_prices` to the model object and name it `prices`.
-      - `purchase_budget` to the model object and name it `budget`.
+      - `average_returns` and name it `returns`.
+      - `daily_prices` and name it `prices`.
+      - `purchase_budget` and name it `budget`.
    
    4. Define the set decision variable and store it in `selected_stocks`. Use `len()` to determine the total number of elements in the set.
    The constraint on the number of selected stocks can be treated as implicit. To ensure that exactly two stocks are selected, restrict the size of the set decision variable by using the `min_size` and `max_size` parameters.
